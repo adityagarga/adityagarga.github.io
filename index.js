@@ -65,3 +65,132 @@ $(document).ready(function(){
       });
   });
   
+Plotly.d3.json('https://raw.githubusercontent.com/plotly/datasets/master/3d-ribbon.json', function(figure){
+
+    var trace1 = {
+      x:figure.data[0].x, y:figure.data[0].y, z:figure.data[0].z,
+      name: '',
+      colorscale: figure.data[0].colorscale,
+      type: 'surface',
+      showscale: false
+    }
+    var trace2 = {
+      x:figure.data[1].x, y:figure.data[1].y, z:figure.data[1].z,
+      name: '',
+      colorscale: figure.data[1].colorscale,
+      type: 'surface',
+      showscale: false
+    }
+    var trace3 = {
+      x:figure.data[2].x, y:figure.data[2].y, z:figure.data[2].z,
+      colorscale: figure.data[2].colorscale,
+      type: 'surface',
+      showscale: false
+    }
+    var trace4 = {
+      x:figure.data[3].x, y:figure.data[3].y, z:figure.data[3].z,
+      colorscale: figure.data[3].colorscale,
+      type: 'surface',
+      showscale: false
+    }
+    var trace5 = {
+      x:figure.data[4].x, y:figure.data[4].y, z:figure.data[4].z,
+      colorscale: figure.data[4].colorscale,
+      type: 'surface',
+      showscale: false
+    }
+    var trace6 = {
+      x:figure.data[5].x, y:figure.data[5].y, z:figure.data[5].z,
+      colorscale: figure.data[5].colorscale,
+      type: 'surface',
+      showscale: false
+    }
+    var trace7 = {
+      x:figure.data[6].x, y:figure.data[6].y, z:figure.data[6].z,
+      name: '',
+      colorscale: figure.data[6].colorscale,
+      type: 'surface',
+      showscale: false
+    }
+    
+    var data = [trace1, trace2, trace3, trace4, trace5, trace6, trace7];
+  
+    var layout = {
+      title: 'Ribbon Plot',
+      showlegend: false,
+      autosize: true,
+      width: 600,
+      height: 600,
+      scene: {
+        xaxis: {title: 'Sample #'},
+        yaxis: {title: 'Wavelength'},
+        zaxis: {title: 'OD'}
+      }
+    };
+    Plotly.newPlot('myDiv', data, layout);
+});
+
+if ('LinearAccelerationSensor' in window && 'Gyroscope' in window) {
+    document.getElementById('moApi').innerHTML = 'Generic Sensor API';
+    
+    let lastReadingTimestamp;
+    let accelerometer = new LinearAccelerationSensor();
+    accelerometer.addEventListener('reading', e => {
+      if (lastReadingTimestamp) {
+        intervalHandler(Math.round(accelerometer.timestamp - lastReadingTimestamp));
+      }
+      lastReadingTimestamp = accelerometer.timestamp
+      accelerationHandler(accelerometer, 'moAccel');
+    });
+    accelerometer.start();
+    
+    if ('GravitySensor' in window) {
+      let gravity = new GravitySensor();
+      gravity.addEventListener('reading', e => accelerationHandler(gravity, 'moAccelGrav'));
+      gravity.start();
+    }
+    
+    let gyroscope = new Gyroscope();
+    gyroscope.addEventListener('reading', e => rotationHandler({
+      alpha: gyroscope.x,
+      beta: gyroscope.y,
+      gamma: gyroscope.z
+    }));
+    gyroscope.start();
+    
+  } else if ('DeviceMotionEvent' in window) {
+    document.getElementById('moApi').innerHTML = 'Device Motion API';
+    
+    var onDeviceMotion = function (eventData) {
+      accelerationHandler(eventData.acceleration, 'moAccel');
+      accelerationHandler(eventData.accelerationIncludingGravity, 'moAccelGrav');
+      rotationHandler(eventData.rotationRate);
+      intervalHandler(eventData.interval);
+    }
+    
+    window.addEventListener('devicemotion', onDeviceMotion, false);
+  } else {
+    document.getElementById('moApi').innerHTML = 'No Accelerometer & Gyroscope API available';
+  }
+  
+  function accelerationHandler(acceleration, targetId) {
+    var info, xyz = "[X, Y, Z]";
+  
+    info = xyz.replace("X", acceleration.x && acceleration.x.toFixed(3));
+    info = info.replace("Y", acceleration.y && acceleration.y.toFixed(3));
+    info = info.replace("Z", acceleration.z && acceleration.z.toFixed(3));
+    document.getElementById(targetId).innerHTML = info;
+  }
+  
+  function rotationHandler(rotation) {
+    var info, xyz = "[X, Y, Z]";
+  
+    info = xyz.replace("X", rotation.alpha && rotation.alpha.toFixed(3));
+    info = info.replace("Y", rotation.beta && rotation.beta.toFixed(3));
+    info = info.replace("Z", rotation.gamma && rotation.gamma.toFixed(3));
+    document.getElementById("moRotation").innerHTML = info;
+  }
+  
+  function intervalHandler(interval) {
+    document.getElementById("moInterval").innerHTML = interval;
+  }
