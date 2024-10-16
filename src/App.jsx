@@ -7,7 +7,7 @@ function App() {
                     <div className="container mx-auto text-center">
                         <h1 className="text-4xl font-bold">Aditya Garga</h1>
                         <p className="text-lg mt-2">
-                            Full-Stack Software & Signal Processing Engineer & Balller!
+                            Full-Stack Software & Signal Processing Engineer
                         </p>
                         <div className="mt-4 space-x-4">
                             <a
@@ -206,7 +206,7 @@ function App() {
                     </h2>
                     <div className="text-center">
                         <p>
-                            If you'd like to get in touch, please email me at:
+                            Please email me at:
                         </p>
                         <a
                             href="mailto:adityagargawork@gmail.com"
