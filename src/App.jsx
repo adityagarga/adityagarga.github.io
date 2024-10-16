@@ -7,7 +7,7 @@ function App() {
                     <div className="container mx-auto text-center">
                         <h1 className="text-4xl font-bold">Aditya Garga</h1>
                         <p className="text-lg mt-2">
-                            Full-Stack Software & Signal Processing Engineer
+                            Full-Stack Software & Signal Processing Engineer & Balller!
                         </p>
                         <div className="mt-4 space-x-4">
                             <a
