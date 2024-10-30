@@ -24,7 +24,7 @@ function App() {
                         </div>
                         <div className="flex max-w-xl flex-col gap-3 rounded border border-black bg-orange-50 px-8 py-4">
                             <div className="flex flex-wrap items-center">
-                                <div className="mr-2 flex">
+                                <div className="mr-2 flex items-center">
                                     <div className="mr-2 h-8 w-8 bg-pink-500"></div>
                                     <span className="font-space text-xl font-bold text-black">
                                         Partoo
