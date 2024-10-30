@@ -1,7 +1,7 @@
 function App() {
     return (
         <>
-            <div className="flex min-h-screen flex-col items-center bg-stone-50">
+            <div className="flex min-h-screen w-full flex-col items-center bg-stone-50">
                 <header className="flex flex-col items-center justify-center py-6 text-center">
                     <img
                         className="relative h-20 w-20 rounded-full border border-black"
@@ -11,11 +11,11 @@ function App() {
                     <div className="font-space text-3xl text-black">software engineer</div>
                 </header>
                 <nav className="flex items-center justify-center gap-4 px-4">
-                    <div className="inline-flex h-16 w-16 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
-                    <div className="inline-flex h-16 w-16 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
-                    <div className="inline-flex h-16 w-16 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
-                    <div className="inline-flex h-16 w-16 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
-                    <div className="inline-flex h-16 w-16 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                    <div className="inline-flex h-12 w-12 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                    <div className="inline-flex h-12 w-12 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                    <div className="inline-flex h-12 w-12 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                    <div className="inline-flex h-12 w-12 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                    <div className="inline-flex h-12 w-12 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
                 </nav>
                 <main>
                     <section className="mt-4 flex flex-col items-start gap-y-2 px-4">
