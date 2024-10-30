@@ -1,221 +1,118 @@
 function App() {
     return (
         <>
-            <div className="min-h-screen bg-gray-100 p-8">
-                {/* Header Section */}
-                <header className="bg-blue-600 text-white py-6 rounded-lg shadow-md">
-                    <div className="container mx-auto text-center">
-                        <h1 className="text-4xl font-bold">Aditya Garga</h1>
-                        <p className="text-lg mt-2">
-                            Full-Stack Software & Signal Processing Engineer
-                        </p>
-                        <div className="mt-4 space-x-4">
-                            <a
-                                href="https://www.linkedin.com/in/aditya-garga"
-                                className="hover:text-gray-300"
-                            >
-                                LinkedIn
-                            </a>
-                            <a
-                                href="https://github.com/adityagarga"
-                                className="hover:text-gray-300"
-                            >
-                                GitHub
-                            </a>
-                            <a
-                                href="mailto:adityagargawork@gmail.com"
-                                className="hover:text-gray-300"
-                            >
-                                Email
-                            </a>
-                        </div>
-                    </div>
+            <div className="flex min-h-screen flex-col items-center bg-stone-50">
+                <header className="flex flex-col items-center justify-center py-6 text-center">
+                    <img
+                        className="relative h-20 w-20 rounded-full border border-black"
+                        src="/profile-icon.png"
+                    />
+                    <div className="font-space text-6xl text-black">Aditya Garga</div>
+                    <div className="font-space text-3xl text-black">software engineer</div>
                 </header>
-
-                {/* About Section */}
-                <section className="my-12 bg-white p-8 rounded-lg shadow-md">
-                    <h2 className="text-3xl font-semibold text-center mb-6">
-                        About Me
-                    </h2>
-                    <p className="text-lg leading-relaxed text-center">
-                        I am a passionate software engineer with expertise in
-                        full-stack development, data engineering, and machine
-                        learning. With a strong background in electrical and
-                        electronic engineering, I continuously seek to push the
-                        boundaries of technology and create innovative
-                        solutions. Outside of work, I enjoy playing guitar,
-                        running, and always staying curious.
-                    </p>
-                </section>
-
-                {/* Experience Section */}
-                <section className="my-12 bg-white p-8 rounded-lg shadow-md">
-                    <h2 className="text-3xl font-semibold text-center mb-6">
-                        Experience
-                    </h2>
-                    <div className="space-y-6">
-                        <div>
-                            <h3 className="text-xl font-bold">
-                                Full-Stack Software Engineer - Partoo
-                            </h3>
-                            <p className="text-gray-600">
-                                Paris, France | Since Sept 2023
-                            </p>
-                            <ul className="list-disc ml-6 mt-2">
-                                <li>
-                                    Developed features to help synchronize store
-                                    information across major platforms (Google,
-                                    Facebook, Waze).
-                                </li>
-                                <li>
-                                    Engineered and built backend services to
-                                    integrate new feature developments for the
-                                    store presence management product.
-                                </li>
-                                <li>
-                                    Technologies used: Python 3.12, FastAPI,
-                                    Celery, PostgreSQL, React, TypeScript.
-                                </li>
-                            </ul>
+                <nav className="flex items-center justify-center gap-4 px-4">
+                    <div className="inline-flex h-16 w-16 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                    <div className="inline-flex h-16 w-16 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                    <div className="inline-flex h-16 w-16 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                    <div className="inline-flex h-16 w-16 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                    <div className="inline-flex h-16 w-16 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                </nav>
+                <main>
+                    <section className="mt-4 flex flex-col items-start gap-y-2 px-4">
+                        <div className="mb-2 font-space text-3xl font-normal text-black underline">
+                            work
                         </div>
-
-                        <div>
-                            <h3 className="text-xl font-bold">
-                                Data Engineer - Celsius Energy
-                            </h3>
-                            <p className="text-gray-600">
-                                Clamart, France | July 2022 - Aug 2023
-                            </p>
-                            <ul className="list-disc ml-6 mt-2">
-                                <li>
-                                    Developed workflows for geothermal heating
-                                    and cooling solutions.
-                                </li>
-                                <li>
-                                    Implemented and deployed data pipelines for
-                                    real-time construction analytics using IoT
-                                    sensors.
-                                </li>
-                                <li>
-                                    Technologies used: Python, Spark,
-                                    Databricks, Azure, Terraform, Angular,
-                                    PowerBI.
-                                </li>
-                            </ul>
+                        <div className="flex max-w-xl flex-col gap-3 rounded border border-black bg-orange-50 px-8 py-4">
+                            <div className="flex flex-wrap items-center">
+                                <div className="mr-2 flex">
+                                    <div className="mr-2 h-8 w-8 bg-pink-500"></div>
+                                    <span className="font-space text-xl font-bold text-black">
+                                        Partoo
+                                    </span>
+                                </div>
+                                <div>
+                                    <span className="font-space text-xl font-normal text-black">
+                                        Full-Stack Software Engineer
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <ul className="list-inside list-disc font-space text-base font-normal text-black">
+                                    <li>
+                                        Developed features to help synchronize store information
+                                        across major platforms (Google, Facebook, Waze)
+                                    </li>
+                                    <li>
+                                        Engineered and built backend services to integrate new
+                                        feature developments for the store presence management
+                                        product
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="flex flex-wrap gap-2">
+                                <div className="inline-flex h-8 w-8 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                                <div className="inline-flex h-8 w-8 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                                <div className="inline-flex h-8 w-8 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                                <div className="inline-flex h-8 w-8 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                                <div className="inline-flex h-8 w-8 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                            </div>
                         </div>
-
-                        <div>
-                            <h3 className="text-xl font-bold">
-                                Data Scientist - Schlumberger
-                            </h3>
-                            <p className="text-gray-600">
-                                Clamart, France | Nov 2019 - June 2022
-                            </p>
-                            <ul className="list-disc ml-6 mt-2">
-                                <li>
-                                    Developed predictive analytics algorithms
-                                    for anomaly detection in drilling
-                                    operations.
-                                </li>
-                                <li>
-                                    Implemented real-time algorithms to work
-                                    with streaming sensor data for major oil and
-                                    gas clients.
-                                </li>
-                                <li>
-                                    Technologies used: Python (numerical
-                                    computing, Dash), C#, large-scale data
-                                    compute platform.
-                                </li>
-                            </ul>
+                        <div className="flex max-w-xl flex-col gap-3 rounded border border-black bg-orange-50 px-8 py-4">
+                            <div className="flex flex-wrap items-center">
+                                <div className="mr-2 flex">
+                                    <div className="mr-2 h-8 w-8 bg-pink-500"></div>
+                                    <span className="font-space text-xl font-bold text-black">
+                                        Celsius Energy
+                                    </span>
+                                </div>
+                                <div>
+                                    <span className="font-space text-xl font-normal text-black">
+                                        Data Engineer
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <ul className="list-inside list-disc font-space text-base font-normal text-black">
+                                    <li>
+                                        Developed workflows for geothermal heating and cooling
+                                        solutions
+                                    </li>
+                                    <li>
+                                        Implemented and deployed data pipelines for real-time
+                                        construction analytics using IoT sensors
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="flex flex-wrap gap-2">
+                                <div className="inline-flex h-8 w-8 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                                <div className="inline-flex h-8 w-8 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                                <div className="inline-flex h-8 w-8 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                                <div className="inline-flex h-8 w-8 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                                <div className="inline-flex h-8 w-8 items-center justify-center rounded border border-black bg-pink-50 shadow-button"></div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-
-                {/* Education Section */}
-                <section className="my-12 bg-white p-8 rounded-lg shadow-md">
-                    <h2 className="text-3xl font-semibold text-center mb-6">
-                        Education
-                    </h2>
-                    <ul className="space-y-4">
-                        <li>
-                            <h3 className="text-xl font-bold">
-                                MSc. Signal Processing - Imperial College London
-                            </h3>
-                            <p className="text-gray-600">
-                                2018-2019 | London, UK
-                            </p>
-                            <p>
-                                Relevant Courses: Digital Signal Processing,
-                                Machine Intelligence, Computer Vision.
-                            </p>
-                        </li>
-                        <li>
-                            <h3 className="text-xl font-bold">
-                                BSc. Electrical and Electronic Engineering -
-                                EPFL
-                            </h3>
-                            <p className="text-gray-600">
-                                2014-2018 | Lausanne, Switzerland
-                            </p>
-                        </li>
-                        <li>
-                            <h3 className="text-xl font-bold">
-                                Year Abroad - KTH Royal Institute of Technology
-                            </h3>
-                            <p className="text-gray-600">
-                                2017-2018 | Stockholm, Sweden
-                            </p>
-                        </li>
-                    </ul>
-                </section>
-
-                {/* Skills Section */}
-                <section className="my-12 bg-white p-8 rounded-lg shadow-md">
-                    <h2 className="text-3xl font-semibold text-center mb-6">
-                        Skills
-                    </h2>
-                    <div className="flex flex-wrap justify-center space-x-6">
-                        <div className="text-center">
-                            <h3 className="font-bold">Programming Languages</h3>
-                            <p>Python, TypeScript, C#, SQL</p>
+                    </section>
+                    <section className="mt-4 flex flex-col items-start gap-y-2 px-4">
+                        <div className="mb-2 font-space text-3xl font-normal text-black underline">
+                            projects
                         </div>
-                        <div className="text-center">
-                            <h3 className="font-bold">
-                                Full-Stack Development
-                            </h3>
-                            <p>React, FastAPI, Celery, PostgreSQL</p>
+                    </section>
+                    <section className="mt-4 flex flex-col items-start gap-y-2 px-4">
+                        <div className="mb-2 font-space text-3xl font-normal text-black underline">
+                            education
                         </div>
-                        <div className="text-center">
-                            <h3 className="font-bold">Data Engineering</h3>
-                            <p>Spark, Databricks, Streaming Technologies</p>
+                    </section>
+                    <section className="mt-4 flex flex-col items-start gap-y-2 px-4">
+                        <div className="mb-2 font-space text-3xl font-normal text-black underline">
+                            life
                         </div>
-                        <div className="text-center">
-                            <h3 className="font-bold">
-                                Machine Learning & Analytics
-                            </h3>
-                            <p>Keras, TensorFlow, Data Visualization</p>
+                    </section>
+                    <section className="mt-4 flex flex-col items-start gap-y-2 px-4">
+                        <div className="mb-2 font-space text-3xl font-normal text-black underline">
+                            contact
                         </div>
-                    </div>
-                </section>
-
-                {/* Contact Section */}
-                <section className="my-12 bg-white p-8 rounded-lg shadow-md">
-                    <h2 className="text-3xl font-semibold text-center mb-6">
-                        Contact
-                    </h2>
-                    <div className="text-center">
-                        <p>
-                            Please email me at:
-                        </p>
-                        <a
-                            href="mailto:adityagargawork@gmail.com"
-                            className="text-blue-600 hover:underline"
-                        >
-                            adityagargawork@gmail.com
-                        </a>
-                    </div>
-                </section>
+                    </section>
+                </main>
             </div>
         </>
     );
