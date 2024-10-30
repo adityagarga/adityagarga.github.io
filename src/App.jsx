@@ -32,7 +32,7 @@ function App() {
                                 </div>
                                 <div>
                                     <span className="font-space text-xl font-normal text-black">
-                                        Full-Stack Software Engineer
+                                        Full-Stack Engineer
                                     </span>
                                 </div>
                             </div>
