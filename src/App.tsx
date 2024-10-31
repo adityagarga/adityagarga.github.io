@@ -25,7 +25,7 @@ const App = () => {
                 </nav>
                 <main>
                     <section className="mt-4 flex flex-col items-start gap-y-2 px-4">
-                        <div className="mb-2 font-space text-3xl font-normal text-black underline">
+                        <div className="mb-2 font-space text-3xl text-black underline">
                             work
                         </div>
                         <WorkCard
