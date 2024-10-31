@@ -3,13 +3,15 @@ import { Button } from './components/ui/button';
 
 const ContactSection = () => {
     const handleEmailClick = () => {
-        // Create a new email to the specified address
         window.location.href = 'mailto:adityagargawork@gmail.com';
     };
 
     const handleLinkedInClick = () => {
-        // Redirect to the LinkedIn profile
         window.open('https://linkedin.com/in/aditya-garga', '_blank');
+    };
+
+    const handleGitHubClick = () => {
+        window.open('https://github.com/adityagarga', '_blank');
     };
 
     return (
@@ -24,6 +26,9 @@ const ContactSection = () => {
                     </Button>
                     <Button onClick={handleLinkedInClick}>
                         <Icon icon={'Linkedin'} />
+                    </Button>
+                    <Button onClick={handleGitHubClick}>
+                        <Icon icon={'Github'} />
                     </Button>
                 </div>
             </section>
