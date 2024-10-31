@@ -1,7 +1,7 @@
 import { Icon, IconName } from './components/icon';
 import { Button } from './components/ui/button';
 
-type WorkCardProps = {
+type InfoCardProps = {
     primaryIcon?: IconName;
     primaryTitle: string;
     secondaryTitle?: string;
@@ -10,14 +10,14 @@ type WorkCardProps = {
     icons?: IconName[];
 };
 
-export const WorkCard = ({
+export const InfoCard = ({
     primaryIcon,
     primaryTitle,
     secondaryTitle,
     subtitles = [],
     description = [],
     icons = [],
-}: WorkCardProps) => {
+}: InfoCardProps) => {
     return (
         <div className="flex w-full max-w-xl flex-col gap-3 rounded border border-black bg-background-card px-8 py-4">
             <div className="flex flex-col flex-wrap">

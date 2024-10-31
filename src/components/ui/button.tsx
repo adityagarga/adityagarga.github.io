@@ -13,7 +13,7 @@ const buttonVariants = cva(
                     'md:hover:bg-primary-hover active:bg-primary-hover inline-flex items-center justify-center rounded border border-black bg-primary p-1',
             },
             size: {
-                default: 'size-12 shadow-button active:translate-x-[3px] active:translate-y-[3px]',
+                default: 'size-12 shadow-button active:translate-x-[2px] active:translate-y-[2px]',
                 medium: 'size-10 active:translate-x-[1px] active:translate-y-[1px]',
                 small: 'size-8',
             },

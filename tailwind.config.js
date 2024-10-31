@@ -10,7 +10,7 @@ const config = {
                 space: ['Space Mono'],
             },
             boxShadow: {
-                button: '3px 3px 0px 0px rgba(0, 0, 0, 0.25)',
+                button: '2px 2px 0px 0px rgba(0, 0, 0, 0.25)',
             },
             colors: {
                 background: {
