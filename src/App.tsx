@@ -121,7 +121,7 @@ const App = () => {
                         <img
                             src="/jimmy.png"
                             alt="Jimmy"
-                            className="absolute right-0 top-[-44px] h-auto w-32"
+                            className="absolute right-0 top-[-24px] h-auto w-32"
                         />
                     </section>
                     <section className="my-4 flex flex-col items-start gap-y-2 px-4">
