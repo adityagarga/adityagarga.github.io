@@ -1,10 +1,13 @@
+import { Icon, IconName } from './components/icon';
+import { Button } from './components/ui/button';
+
 type WorkCardProps = {
-    primaryIcon: boolean;
+    primaryIcon?: IconName;
     primaryTitle: string;
     secondaryTitle?: string;
-    subtitles?: string[]; // Optional subtitles
-    description?: string[]; // Optional description
-    icons?: string[]; // Optional icons
+    subtitles?: string[];
+    description?: string[];
+    icons?: IconName[];
 };
 
 export const WorkCard = ({
@@ -16,23 +19,22 @@ export const WorkCard = ({
     icons = [],
 }: WorkCardProps) => {
     return (
-        <div className="flex w-full max-w-xl flex-col gap-3 rounded border border-black bg-orange-50 px-8 py-4">
-            {/* Company and Job Title */}
+        <div className="flex w-full max-w-xl flex-col gap-3 rounded border border-black bg-background-card px-8 py-4">
             <div className="flex flex-col flex-wrap">
                 <div className="flex flex-wrap items-center">
                     <div className="mr-2 flex items-center">
                         {primaryIcon && (
-                            <div className="mr-2 min-h-8 min-w-8 bg-pink-500">
-                                {/* <img src={primaryIcon} alt="icon" className="h-full w-full object-cover" /> */}
-                            </div>
+                            <Button size={'medium'} className="mr-2 min-h-10 min-w-10">
+                                <Icon icon={primaryIcon} />
+                            </Button>
                         )}
-                        <span className="font-space text-xl font-bold text-black">
+                        <span className="font-space text-xl font-bold text-text">
                             {primaryTitle}
                         </span>
                     </div>
                     {secondaryTitle && (
                         <div>
-                            <span className="font-space text-xl font-normal text-black">
+                            <span className="font-space text-xl font-normal text-text">
                                 {secondaryTitle}
                             </span>
                         </div>
@@ -40,7 +42,7 @@ export const WorkCard = ({
                 </div>
                 {/* Subtitles */}
                 {subtitles.length > 0 && (
-                    <div className="font-space text-base font-medium text-black">
+                    <div className="font-space text-base font-medium text-text-light">
                         {subtitles.map((subtitle, index) => (
                             <div key={index}>{subtitle}</div>
                         ))}
@@ -65,9 +67,9 @@ export const WorkCard = ({
                     {icons.map((icon, index) => (
                         <div
                             key={index}
-                            className="inline-flex size-8 items-center justify-center rounded border border-black bg-pink-50 shadow-button"
+                            className="inline-flex size-8 items-center justify-center rounded border border-black bg-primary p-1"
                         >
-                            {/* <img src={icon} alt="icon" className="h-full w-full object-cover" /> */}
+                            <Icon icon={icon} />
                         </div>
                     ))}
                 </div>
