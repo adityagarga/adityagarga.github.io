@@ -25,8 +25,10 @@ const App = () => {
                             work
                         </div>
                         <WorkCard
-                            companyName="Partoo"
-                            jobTitle="Full-Stack Engineer"
+                            primaryIcon
+                            primaryTitle="Partoo"
+                            secondaryTitle="Full-Stack Engineer"
+                            subtitles={['since Sept 2023']}
                             description={[
                                 'Developed features to help synchronize store information across major platforms (Google, Facebook, Waze)',
                                 'Engineered and built backend services to integrate new feature developments for the store presence management product',
@@ -40,8 +42,10 @@ const App = () => {
                             ]}
                         />
                         <WorkCard
-                            companyName="Celsius Energy"
-                            jobTitle="Data Engineer"
+                            primaryIcon
+                            primaryTitle="Celsius Energy"
+                            secondaryTitle="Data Engineer"
+                            subtitles={['Jul 2022 till Aug 2023']}
                             description={[
                                 'Developed workflows for geothermal heating and cooling solutions',
                                 'Implemented and deployed data pipelines for real-time construction analytics using IoT sensors',
@@ -55,8 +59,10 @@ const App = () => {
                             ]}
                         />
                         <WorkCard
-                            companyName="Schlumberger"
-                            jobTitle="Data Scientist"
+                            primaryIcon
+                            primaryTitle="Schlumberger"
+                            secondaryTitle="Data Scientist"
+                            subtitles={['Dec 2019 till Jun 2022']}
                             description={[
                                 'Developed predictive analytics algorithms for anomaly detection in drilling operations',
                                 'Implemented real-time algorithms to work with streaming sensor data for major oil and gas clients',
@@ -74,16 +80,55 @@ const App = () => {
                         <div className="mb-2 font-space text-3xl font-normal text-black underline">
                             projects
                         </div>
+                        <WorkCard
+                            primaryIcon
+                            primaryTitle="superyu"
+                            secondaryTitle="fitness app"
+                            description={[
+                                'Full Stack development of a fitness app that helps users track their workouts and progress',
+                            ]}
+                        />
                     </section>
                     <section className="mt-4 flex flex-col items-start gap-y-2 px-4">
                         <div className="mb-2 font-space text-3xl font-normal text-black underline">
                             education
                         </div>
+                        <WorkCard
+                            primaryIcon
+                            primaryTitle="Imperial College London"
+                            secondaryTitle="MSc Signal Processing & Machine Learning"
+                            subtitles={['2018-2019']}
+                        />
+                        <WorkCard
+                            primaryIcon
+                            primaryTitle="KTH Royal Insititue of Technology"
+                            secondaryTitle="BSc Electrical & Electronic Engineering"
+                            subtitles={['2017-2018 (year abroad)']}
+                        />
+                        <WorkCard
+                            primaryIcon
+                            primaryTitle="EPFL"
+                            secondaryTitle="BSc Electrical & Electronic Engineering"
+                            subtitles={['2014-2018']}
+                        />
                     </section>
                     <section className="mt-4 flex flex-col items-start gap-y-2 px-4">
                         <div className="mb-2 font-space text-3xl font-normal text-black underline">
                             life
                         </div>
+                        <WorkCard
+                            primaryIcon={false}
+                            primaryTitle="playing gutiar"
+                            subtitles={['jamming the blues']}
+                        />
+                        <WorkCard
+                            primaryIcon={false}
+                            primaryTitle="lifting weights and running"
+                            subtitles={[
+                                'Paris Versailles 2022 & 2024',
+                                'Semi Marathon de Paris 2023',
+                            ]}
+                        />
                     </section>
                     <section className="mt-4 flex flex-col items-start gap-y-2 px-4">
                         <div className="mb-2 font-space text-3xl font-normal text-black underline">
@@ -94,6 +139,6 @@ const App = () => {
             </div>
         </>
     );
-}
+};
 
 export default App;
