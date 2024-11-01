@@ -1,7 +1,7 @@
 import WorkIcon from './assets/work.svg';
 import EducationIcon from './assets/education.svg';
 import ProjectIcon from './assets/project.svg';
-import GuitarIcon from './assets/guitar.svg';
+import LifeIcon from './assets/guitar.svg';
 import ContactIcon from './assets/contact.svg';
 import PartooIcon from './assets/partoo.svg';
 import CelsiusIcon from './assets/celsius.svg';
@@ -29,7 +29,7 @@ const iconMap = {
     Work: WorkIcon,
     Education: EducationIcon,
     Project: ProjectIcon,
-    Guitar: GuitarIcon,
+    Life: LifeIcon,
     Contact: ContactIcon,
     Partoo: PartooIcon,
     Celsius: CelsiusIcon,
