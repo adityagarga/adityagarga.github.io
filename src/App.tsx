@@ -36,13 +36,13 @@ const App = () => {
                     <div className="font-space text-6xl text-text">Aditya Garga</div>
                     <div className="font-space text-3xl text-text">software engineer</div>
                 </header>
-                <nav className="flex items-center justify-center gap-x-6 px-4">
+                <nav className="flex items-center justify-center gap-x-4 px-4">
                     {sections.map(section => (
                         <div className="flex flex-col items-center justify-center">
                             <Button key={section} onClick={() => scrollToSection(section)}>
                                 <Icon icon={section} />
                             </Button>
-                            <div className="absolute mt-16 font-space text-xs text-text">
+                            <div className="absolute mt-16 font-space text-[10px] text-text">
                                 {section}
                             </div>
                         </div>
