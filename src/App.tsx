@@ -38,9 +38,16 @@ const App = () => {
                 </header>
                 <nav className="flex items-center justify-center gap-4 px-4">
                     {sections.map(section => (
+                        <div className='flex flex-col items-center justify-center'>
+
                         <Button key={section} onClick={() => scrollToSection(section)}>
                             <Icon icon={section} />
                         </Button>
+                        <span className="mt-1 font-space text-xs text-text">
+                            {section}
+                        </span>
+
+                        </div>
                     ))}
                 </nav>
                 <main>
