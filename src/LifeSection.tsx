@@ -13,7 +13,7 @@ const LifeSection = () => {
                 <InfoCard
                     primaryIcon={'Running'}
                     primaryTitle="lifting weights and running"
-                    subtitles={['Paris Versailles 2022 & 2024', 'Semi Marathon de Paris 2023']}
+                    subtitles={['Paris Versailles 16.2km (2022, 2024)', 'Semi de Paris 21.1km (2023)']}
                 />
             </section>
             <div className="relative flex justify-end px-4">
