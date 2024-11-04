@@ -24,6 +24,11 @@ import DatabricksIcon from './assets/databricks.svg';
 import AzureIcon from './assets/azure.svg';
 import PowerbiIcon from './assets/powerbi.svg';
 import TensorflowIcon from './assets/tensorflow.svg';
+import ImperialLogo from './assets/imperial.png';
+import EPFLLogo from './assets/epfl.png';
+import KTHLogo from './assets/kth.png';
+import StratLogo from './assets/strat.png';
+import RunningLogo from './assets/running.svg';
 
 const iconMap = {
     Work: WorkIcon,
@@ -52,6 +57,11 @@ const iconMap = {
     Azure: AzureIcon,
     Powerbi: PowerbiIcon,
     Tensorflow: TensorflowIcon,
+    Imperial: ImperialLogo,
+    KTH: KTHLogo,
+    EPFL: EPFLLogo,
+    Strat: StratLogo,
+    Running: RunningLogo,
 } as const;
 
 export type IconName = keyof typeof iconMap;

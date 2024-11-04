@@ -8,16 +8,19 @@ const EducationSection = () => {
                     education
                 </div>
                 <InfoCard
+                    primaryIcon="Imperial"
                     primaryTitle="Imperial College London"
                     secondaryTitle="MSc Signal Processing & Machine Learning"
                     subtitles={['2018-2019']}
                 />
                 <InfoCard
+                    primaryIcon="KTH"
                     primaryTitle="KTH Royal Insititue of Technology"
                     secondaryTitle="BSc Electrical & Electronic Engineering"
                     subtitles={['2017-2018 (year abroad)']}
                 />
                 <InfoCard
+                    primaryIcon="EPFL"
                     primaryTitle="EPFL"
                     secondaryTitle="BSc Electrical & Electronic Engineering"
                     subtitles={['2014-2018']}
