@@ -21,7 +21,7 @@ const EducationSection = () => {
                 />
                 <InfoCard
                     primaryIcon="EPFL"
-                    primaryTitle="EPFL"
+                    primaryTitle="Ecole Polytechnique Fédérale de Lausanne"
                     secondaryTitle="BSc Electrical & Electronic Engineering"
                     subtitles={['2014-2018']}
                 />
