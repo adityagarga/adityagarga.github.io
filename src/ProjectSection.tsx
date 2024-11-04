@@ -12,7 +12,7 @@ const ProjectSection = () => {
                     primaryTitle="superyu"
                     secondaryTitle="fitness app"
                     description={[
-                        'Full Stack development of a fitness app that helps users track their workouts and progress',
+                        'Full Stack development of a fitness app that helps users plan and track their workouts',
                     ]}
                     icons={[
                         'Supabase',
