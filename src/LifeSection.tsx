@@ -7,12 +7,12 @@ const LifeSection = () => {
                 <div className="mb-2 font-space text-3xl font-normal text-text underline">life</div>
                 <InfoCard
                     primaryIcon={'Strat'}
-                    primaryTitle="playing gutiar"
-                    subtitles={['jamming the blues']}
+                    primaryTitle="Playing guitar"
+                    subtitles={['Jamming the blues, favorite artists: BB King, Jimi Hendrix, SRV, John Mayer']}
                 />
                 <InfoCard
                     primaryIcon={'Running'}
-                    primaryTitle="lifting weights and running"
+                    primaryTitle="Weight lifting and running"
                     subtitles={['Paris Versailles 16.2km (2022, 2024)', 'Semi de Paris 21.1km (2023)']}
                 />
             </section>
