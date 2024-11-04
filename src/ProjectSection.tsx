@@ -10,7 +10,7 @@ const ProjectSection = () => {
                 <InfoCard
                     primaryIcon="Superyu"
                     primaryTitle="superyu"
-                    secondaryTitle="fitness app"
+                    secondaryTitle="Fitness App"
                     description={[
                         'Full Stack development of a fitness app that helps users plan and track their workouts',
                     ]}

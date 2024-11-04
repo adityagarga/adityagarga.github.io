@@ -48,7 +48,7 @@ const App = () => {
                         </div>
                     ))}
                 </nav>
-                <main>
+                <main className='flex flex-col gap-y-8 my-4'>
                     {sections.map(section => (
                         <div key={section} ref={sectionRefs[section]}>
                             {section === 'Work' && <WorkSection />}
