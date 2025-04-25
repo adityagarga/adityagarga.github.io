@@ -6,10 +6,19 @@ const WorkSection = () => {
             <section className="mt-4 flex flex-col items-start gap-y-2 px-4">
                 <div className="mb-2 font-space text-3xl text-black underline">work</div>
                 <InfoCard
+                    primaryIcon="Carbonfact"
+                    primaryTitle="Carbonfact"
+                    secondaryTitle="Data Scientist"
+                    subtitles={['from June 2025']}
+                    description={[
+                        'Joining Carbonfact as a Data Scientist to help decarbonize the fashion industry',
+                    ]}
+                />
+                <InfoCard
                     primaryIcon="Partoo"
                     primaryTitle="Partoo"
                     secondaryTitle="Full-Stack Engineer"
-                    subtitles={['since Sept 2023']}
+                    subtitles={['Sept 2023 till May 2025']}
                     description={[
                         'Developed features to help synchronize store information across major platforms (Google, Facebook, Waze)',
                         'Engineered and built backend services to integrate new feature developments for the store presence management product',
