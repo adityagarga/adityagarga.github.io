@@ -53,11 +53,17 @@ export const InfoCard = ({
             {/* Description */}
             {description.length > 0 && (
                 <div>
-                    <ul className="list-inside list-disc font-space text-base font-normal text-black">
-                        {description.map((item, index) => (
-                            <li key={index}>{item}</li>
-                        ))}
-                    </ul>
+                    {description.length === 1 ? (
+                        <p className="font-space text-base font-normal text-black">
+                            {description[0]}
+                        </p>
+                    ) : (
+                        <ul className="list-inside list-disc font-space text-base font-normal text-black">
+                            {description.map((item, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
             )}
 
