@@ -18,7 +18,7 @@ const WorkSection = () => {
                     primaryIcon="Partoo"
                     primaryTitle="Partoo"
                     secondaryTitle="Full-Stack Engineer"
-                    subtitles={['Sept 2023 till May 2025']}
+                    subtitles={['Sept 2023 till Apr 2025']}
                     description={[
                         'Developed features to help synchronize store information across major platforms (Google, Facebook, Waze)',
                         'Engineered and built backend services to integrate new feature developments for the store presence management product',
