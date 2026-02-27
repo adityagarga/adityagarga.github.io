@@ -1,32 +1,39 @@
 import { InfoCard } from './InfoCard';
+import { AnimatedSection, StaggerContainer, StaggerItem } from './AnimatedSection';
 
 const ProjectSection = () => {
     return (
-        <>
-            <section className="mt-4 flex flex-col items-start gap-y-2 px-4">
-                <div className="mb-2 font-space text-3xl font-normal text-text underline">
+        <AnimatedSection>
+            <section className="flex flex-col gap-4">
+                <h2 className="inline-block border-b-[3px] border-amber-400 pb-0.5 font-space text-2xl font-bold text-text sm:text-3xl">
                     projects
-                </div>
-                <InfoCard
-                    primaryIcon="Superyu"
-                    primaryTitle="superyu"
-                    secondaryTitle="Fitness App"
-                    description={[
-                        'Full Stack development of a fitness app that helps users plan and track their workouts',
-                    ]}
-                    icons={[
-                        'Supabase',
-                        'Python',
-                        'Fastapi',
-                        'Typescript',
-                        'React',
-                        'Reactquery',
-                        'Tailwindcss',
-                        'Figma',
-                    ]}
-                />
+                </h2>
+                <StaggerContainer className="flex flex-col gap-3">
+                    <StaggerItem>
+                        <InfoCard
+                            color="yellow"
+                            primaryIcon="Superyu"
+                            primaryTitle="superyu"
+                            secondaryTitle="Fitness App"
+                            description={[
+                                'Full-stack fitness app that helps users plan and track their workouts. Built from the ground up with a focus on clean UX and reliable performance.',
+                            ]}
+                            icons={[
+                                'Supabase',
+                                'Python',
+                                'Fastapi',
+                                'Typescript',
+                                'React',
+                                'Reactquery',
+                                'Tailwindcss',
+                                'Figma',
+                            ]}
+                            link="https://github.com/adityagarga"
+                        />
+                    </StaggerItem>
+                </StaggerContainer>
             </section>
-        </>
+        </AnimatedSection>
     );
 };
 

@@ -1,32 +1,47 @@
 import { InfoCard } from './InfoCard';
+import { AnimatedSection, StaggerContainer, StaggerItem } from './AnimatedSection';
 
 const EducationSection = () => {
     return (
-        <>
-            <section className="mt-4 flex flex-col items-start gap-y-2 px-4">
-                <div className="mb-2 font-space text-3xl font-normal text-text underline">
+        <AnimatedSection>
+            <section className="flex flex-col gap-4">
+                <h2 className="inline-block border-b-[3px] border-emerald-400 pb-0.5 font-space text-2xl font-bold text-text sm:text-3xl">
                     education
-                </div>
-                <InfoCard
-                    primaryIcon="Imperial"
-                    primaryTitle="Imperial College London"
-                    secondaryTitle="MSc Signal Processing & Machine Learning"
-                    subtitles={['2018-2019']}
-                />
-                <InfoCard
-                    primaryIcon="KTH"
-                    primaryTitle="KTH Royal Insititue of Technology"
-                    secondaryTitle="BSc Electrical & Electronic Engineering"
-                    subtitles={['2017-2018 (year abroad)']}
-                />
-                <InfoCard
-                    primaryIcon="EPFL"
-                    primaryTitle="Ecole Polytechnique Fédérale de Lausanne"
-                    secondaryTitle="BSc Electrical & Electronic Engineering"
-                    subtitles={['2014-2018']}
-                />
+                </h2>
+                <StaggerContainer className="flex flex-col gap-3">
+                    <StaggerItem>
+                        <InfoCard
+                            color="green"
+                            primaryIcon="Imperial"
+                            primaryTitle="Imperial College London"
+                            secondaryTitle="MSc Signal Processing & Machine Learning"
+                            subtitles={['2018 - 2019']}
+                            link="https://www.imperial.ac.uk"
+                        />
+                    </StaggerItem>
+                    <StaggerItem>
+                        <InfoCard
+                            color="green"
+                            primaryIcon="KTH"
+                            primaryTitle="KTH Royal Institute of Technology"
+                            secondaryTitle="BSc Electrical & Electronic Engineering"
+                            subtitles={['2017 - 2018 (year abroad)']}
+                            link="https://www.kth.se/en"
+                        />
+                    </StaggerItem>
+                    <StaggerItem>
+                        <InfoCard
+                            color="green"
+                            primaryIcon="EPFL"
+                            primaryTitle="Ecole Polytechnique Federale de Lausanne"
+                            secondaryTitle="BSc Electrical & Electronic Engineering"
+                            subtitles={['2014 - 2018']}
+                            link="https://www.epfl.ch/en"
+                        />
+                    </StaggerItem>
+                </StaggerContainer>
             </section>
-        </>
+        </AnimatedSection>
     );
 };
 
