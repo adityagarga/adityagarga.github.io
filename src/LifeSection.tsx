@@ -36,7 +36,7 @@ const LifeSection = () => {
                             primaryIcon="Book"
                             primaryTitle="Reading"
                             subtitles={[
-                                'Sci-fi, thrillers, non-fiction. 48-book challenge for 2026.',
+                                'Sci-fi, thrillers, non-fiction. 24-book challenge for 2026.',
                                 'Favorites: Project Hail Mary, Dark Matter, 11/22/63',
                             ]}
                             link="https://www.goodreads.com/user/show/180274108-aditya-garga"
