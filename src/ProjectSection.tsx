@@ -12,6 +12,19 @@ const ProjectSection = () => {
                     <StaggerItem>
                         <InfoCard
                             color="yellow"
+                            primaryIcon="Strat"
+                            primaryTitle="guitar-view"
+                            secondaryTitle="Fretboard Visualizer"
+                            description={[
+                                'Guitar fretboard visualizer showing intervals relative to chord progressions, with a built-in metronome and voice leading.',
+                            ]}
+                            icons={['Typescript', 'React', 'Tailwindcss']}
+                            link="https://github.com/adityagarga/guitar-view"
+                        />
+                    </StaggerItem>
+                    <StaggerItem>
+                        <InfoCard
+                            color="yellow"
                             primaryIcon="Superyu"
                             primaryTitle="superyu"
                             secondaryTitle="Fitness App"
