@@ -12,14 +12,14 @@ const ProjectSection = () => {
                     <StaggerItem>
                         <InfoCard
                             color="yellow"
-                            primaryIcon="Strat"
+                            primaryEmoji="🎸"
                             primaryTitle="guitar-view"
                             secondaryTitle="Fretboard Visualizer"
                             description={[
                                 'Guitar fretboard visualizer showing intervals relative to chord progressions, with a built-in metronome and voice leading.',
                             ]}
                             icons={['Typescript', 'React', 'Tailwindcss']}
-                            link="https://github.com/adityagarga/guitar-view"
+                            link="https://adityagarga.com/guitar-view/"
                         />
                     </StaggerItem>
                     <StaggerItem>

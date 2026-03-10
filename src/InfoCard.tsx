@@ -38,6 +38,7 @@ const colorStyles: Record<CardColor, { card: string; bullet: string; badge: stri
 
 type InfoCardProps = {
     primaryIcon?: IconName;
+    primaryEmoji?: string;
     primaryTitle: string;
     secondaryTitle?: string;
     subtitles?: string[];
@@ -49,6 +50,7 @@ type InfoCardProps = {
 
 export const InfoCard = ({
     primaryIcon,
+    primaryEmoji,
     primaryTitle,
     secondaryTitle,
     subtitles = [],
@@ -70,12 +72,16 @@ export const InfoCard = ({
         >
             <div className="flex flex-col flex-wrap">
                 <div className="flex flex-wrap items-center gap-2">
-                    {primaryIcon && (
+                    {(primaryIcon || primaryEmoji) && (
                         <Button
                             size="medium"
                             className="pointer-events-none min-h-10 min-w-10 shrink-0"
                         >
-                            <Icon icon={primaryIcon} />
+                            {primaryEmoji ? (
+                                <span className="text-xl">{primaryEmoji}</span>
+                            ) : (
+                                <Icon icon={primaryIcon!} />
+                            )}
                         </Button>
                     )}
                     <div className="flex flex-wrap items-baseline gap-x-2">
