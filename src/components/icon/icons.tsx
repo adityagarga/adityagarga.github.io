@@ -31,6 +31,7 @@ import StratLogo from './assets/strat.png';
 import RunningLogo from './assets/running.svg';
 import CarbonfactLogo from './assets/carbonfact.png';
 import BookIcon from './assets/book.svg';
+import BlogIcon from './assets/blog.svg';
 import WaddleIcon from './assets/waddle.svg';
 
 const iconMap = {
@@ -67,6 +68,7 @@ const iconMap = {
     Running: RunningLogo,
     Carbonfact: CarbonfactLogo,
     Book: BookIcon,
+    Blog: BlogIcon,
     Waddle: WaddleIcon,
 } as const;
 

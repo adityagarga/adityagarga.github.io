@@ -18,7 +18,7 @@ const sections: { name: string; icon: IconName; activeColor: string }[] = [
     { name: 'About', icon: 'Contact', activeColor: 'bg-pink-200' },
     { name: 'Work', icon: 'Work', activeColor: 'bg-orange-200' },
     { name: 'Project', icon: 'Project', activeColor: 'bg-amber-200' },
-    { name: 'Blog', icon: 'Book', activeColor: 'bg-cyan-200' },
+    { name: 'Blog', icon: 'Blog', activeColor: 'bg-cyan-200' },
     { name: 'Education', icon: 'Education', activeColor: 'bg-emerald-200' },
     { name: 'Life', icon: 'Life', activeColor: 'bg-sky-200' },
     { name: 'Contact', icon: 'Email', activeColor: 'bg-violet-200' },
