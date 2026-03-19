@@ -135,7 +135,7 @@ const HomePage = () => {
                         : 'py-3'
                 }`}
             >
-                <div className="flex items-center gap-x-2 px-2 sm:gap-x-3 sm:px-0">
+                <div className="flex items-center gap-x-1.5 overflow-x-auto px-3 sm:gap-x-3 sm:px-0">
                     {sections.map(({ name, icon, activeColor }) => (
                         <button
                             key={name}

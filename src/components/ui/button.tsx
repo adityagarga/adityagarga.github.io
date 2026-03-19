@@ -14,7 +14,7 @@ const buttonVariants = cva(
             },
             size: {
                 default:
-                    'size-11 shadow-button active:translate-x-[2px] active:translate-y-[2px] active:shadow-none sm:size-12',
+                    'size-9 shadow-button active:translate-x-[2px] active:translate-y-[2px] active:shadow-none sm:size-12',
                 medium: 'size-10 shadow-button-hover active:translate-x-[1px] active:translate-y-[1px] active:shadow-none',
                 small: 'size-8 shadow-badge active:shadow-none',
             },
