@@ -9,15 +9,17 @@ const AboutSection = () => {
                 </h2>
                 <div className="flex flex-col gap-4 font-space text-sm leading-relaxed text-text sm:text-base">
                     <p>
-                        I'm a software engineer based in Paris with a background spanning data
-                        science, data engineering, and full-stack development. I've worked across
-                        industries from energy to marketing software to climate tech, and I care
-                        about building things that are both technically sound and useful.
+                        I'm an AI engineer based in Paris with a background spanning data science,
+                        data engineering, and full-stack development across industries from energy
+                        to marketing software to climate tech. Currently focused on building
+                        products using agentic engineering — multi-agent orchestration and context
+                        management.
                     </p>
                     <p>
                         I studied electrical engineering at EPFL and KTH, then specialized in signal
                         processing and machine learning at Imperial College London. These days I
-                        mostly work with Python, TypeScript, React, and various data tools.
+                        work with Python, TypeScript, React, and AI tooling like PydanticAI and
+                        Claude to build agentic products.
                     </p>
                     <p>
                         Outside of work, I play blues guitar, lift weights, run races around Paris

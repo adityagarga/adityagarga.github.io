@@ -31,6 +31,7 @@ import StratLogo from './assets/strat.png';
 import RunningLogo from './assets/running.svg';
 import CarbonfactLogo from './assets/carbonfact.png';
 import BookIcon from './assets/book.svg';
+import WaddleIcon from './assets/waddle.svg';
 
 const iconMap = {
     Work: WorkIcon,
@@ -66,6 +67,7 @@ const iconMap = {
     Running: RunningLogo,
     Carbonfact: CarbonfactLogo,
     Book: BookIcon,
+    Waddle: WaddleIcon,
 } as const;
 
 export type IconName = keyof typeof iconMap;

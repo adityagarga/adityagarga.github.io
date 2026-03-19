@@ -12,6 +12,28 @@ const ProjectSection = () => {
                     <StaggerItem>
                         <InfoCard
                             color="yellow"
+                            primaryIcon="Waddle"
+                            primaryTitle="Waddle"
+                            secondaryTitle="Agentic Shared Calendar App"
+                            description={[
+                                'AI-powered calendar assistant that uses multi-agent orchestration to manage scheduling through natural language. Agents handle intent parsing, conflict resolution, and calendar operations autonomously.',
+                            ]}
+                            icons={[
+                                'Python',
+                                'Fastapi',
+                                'Typescript',
+                                'React',
+                                'Reactquery',
+                                'Postgresql',
+                                'Supabase',
+                                'Tailwindcss',
+                            ]}
+                            link="https://waddlecalendar.com"
+                        />
+                    </StaggerItem>
+                    <StaggerItem>
+                        <InfoCard
+                            color="yellow"
                             primaryEmoji="🎸"
                             primaryTitle="guitar-view"
                             secondaryTitle="Fretboard Visualizer"
