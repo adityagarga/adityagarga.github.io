@@ -9,17 +9,22 @@ import ContactSection from './ContactSection';
 import Footer from './Footer';
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import { Routes, Route } from 'react-router-dom';
+import BlogSection from './blog/BlogSection';
+import BlogIndex from './blog/BlogIndex';
+import BlogPost from './blog/BlogPost';
 
 const sections: { name: string; icon: IconName; activeColor: string }[] = [
     { name: 'About', icon: 'Contact', activeColor: 'bg-pink-200' },
     { name: 'Work', icon: 'Work', activeColor: 'bg-orange-200' },
     { name: 'Project', icon: 'Project', activeColor: 'bg-amber-200' },
+    { name: 'Blog', icon: 'Book', activeColor: 'bg-cyan-200' },
     { name: 'Education', icon: 'Education', activeColor: 'bg-emerald-200' },
     { name: 'Life', icon: 'Life', activeColor: 'bg-sky-200' },
     { name: 'Contact', icon: 'Email', activeColor: 'bg-violet-200' },
 ];
 
-const App = () => {
+const HomePage = () => {
     const [activeSection, setActiveSection] = useState('');
     const [scrolled, setScrolled] = useState(false);
     const sectionRefs: Record<string, React.RefObject<HTMLDivElement>> = {
@@ -27,6 +32,7 @@ const App = () => {
         Work: useRef<HTMLDivElement>(null),
         Education: useRef<HTMLDivElement>(null),
         Project: useRef<HTMLDivElement>(null),
+        Blog: useRef<HTMLDivElement>(null),
         Life: useRef<HTMLDivElement>(null),
         Contact: useRef<HTMLDivElement>(null),
     };
@@ -92,7 +98,7 @@ const App = () => {
                     transition={{ delay: 0.45, duration: 0.5 }}
                     className="mt-2 font-space text-lg text-text-light sm:text-xl"
                 >
-                    software engineer &middot; paris
+                    AI engineer &middot; paris
                 </motion.p>
                 <motion.p
                     initial={{ opacity: 0 }}
@@ -100,8 +106,7 @@ const App = () => {
                     transition={{ delay: 0.6, duration: 0.6 }}
                     className="mt-3 max-w-md font-space text-sm leading-relaxed text-text-light sm:text-base"
                 >
-                    Building products at the intersection of data science, full-stack development,
-                    and AI.
+                    Building products with agentic engineering.
                 </motion.p>
                 {/* Rainbow divider */}
                 <motion.div
@@ -173,6 +178,9 @@ const App = () => {
                 <div ref={sectionRefs.Project}>
                     <ProjectSection />
                 </div>
+                <div ref={sectionRefs.Blog}>
+                    <BlogSection />
+                </div>
                 <div ref={sectionRefs.Education}>
                     <EducationSection />
                 </div>
@@ -186,6 +194,17 @@ const App = () => {
 
             <Footer />
         </div>
+    );
+};
+
+const App = () => {
+    return (
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/blog" element={<BlogIndex />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="*" element={<HomePage />} />
+        </Routes>
     );
 };
 

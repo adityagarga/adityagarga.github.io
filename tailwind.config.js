@@ -11,6 +11,8 @@ const config = {
         'bg-emerald-200',
         'bg-sky-200',
         'bg-violet-200',
+        'bg-cyan-200',
+        'group-hover:bg-cyan-200',
         'group-hover:bg-pink-200',
         'group-hover:bg-orange-200',
         'group-hover:bg-amber-200',
