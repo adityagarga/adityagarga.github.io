@@ -1,5 +1,3 @@
-import matter from 'gray-matter';
-
 export type PostType = 'post' | 'note';
 
 export interface PostMeta {
@@ -14,6 +12,24 @@ export interface Post extends PostMeta {
     content: string;
 }
 
+function parseFrontmatter(raw: string): { data: Record<string, string>; content: string } {
+    const match = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+    if (!match) return { data: {}, content: raw };
+    const data: Record<string, string> = {};
+    for (const line of match[1].split('\n')) {
+        const idx = line.indexOf(':');
+        if (idx > 0) {
+            const key = line.slice(0, idx).trim();
+            const val = line
+                .slice(idx + 1)
+                .trim()
+                .replace(/^["']|["']$/g, '');
+            data[key] = val;
+        }
+    }
+    return { data, content: match[2] };
+}
+
 // Vite glob import: all .md files as raw strings
 const modules = import.meta.glob('../content/blog/*.md', {
     query: '?raw',
@@ -22,16 +38,13 @@ const modules = import.meta.glob('../content/blog/*.md', {
 }) as Record<string, string>;
 
 function parsePost(filePath: string, raw: string): Post {
-    const { data, content } = matter(raw);
+    const { data, content } = parseFrontmatter(raw);
     const slug = filePath.replace('../content/blog/', '').replace('.md', '');
 
     return {
         slug,
         title: data.title ?? 'Untitled',
-        date:
-            data.date instanceof Date
-                ? data.date.toISOString().split('T')[0]
-                : String(data.date ?? ''),
+        date: data.date ?? '',
         description: data.description ?? '',
         type: (data.type as PostType) ?? 'post',
         content,
