@@ -6,6 +6,7 @@ export interface PostMeta {
     date: string;
     description: string;
     type: PostType;
+    draft: boolean;
 }
 
 export interface Post extends PostMeta {
@@ -47,6 +48,7 @@ function parsePost(filePath: string, raw: string): Post {
         date: data.date ?? '',
         description: data.description ?? '',
         type: (data.type as PostType) ?? 'post',
+        draft: data.draft === 'true',
         content,
     };
 }
@@ -55,10 +57,12 @@ const allPosts: Post[] = Object.entries(modules)
     .map(([path, raw]) => parsePost(path, raw))
     .sort((a, b) => b.date.localeCompare(a.date));
 
+const publicPosts = allPosts.filter(p => !p.draft);
+
 export function getPostList(): PostMeta[] {
-    return allPosts.map(({ content: _, ...meta }) => meta);
+    return publicPosts.map(({ content: _, ...meta }) => meta);
 }
 
 export function getPost(slug: string): Post | undefined {
-    return allPosts.find(p => p.slug === slug);
+    return publicPosts.find(p => p.slug === slug);
 }
