@@ -14,10 +14,12 @@ const WorkSection = () => {
                             color="orange"
                             primaryIcon="Carbonfact"
                             primaryTitle="Carbonfact"
-                            secondaryTitle="Data Scientist"
+                            secondaryTitle="Forward Deployed AI Engineer"
                             subtitles={['June 2025 - Present']}
                             description={[
-                                'Working at Carbonfact as a Data Scientist to help decarbonize the fashion industry',
+                                'Y Combinator-backed, fast-growing climate tech startup building a carbon accounting platform for the fashion and textile industry, used by top brands',
+                                'Owned the full client lifecycle across 15+ fashion brands (pre-sales, onboarding, and long-term account management), turning their complex supply chain data into audit-ready carbon analytics',
+                                'Built various AI-powered data connectors for clients that power a custom LCA (life cycle assessment) engine, to generate powerful strategic sustainability insights',
                             ]}
                             link="https://www.carbonfact.com"
                         />
