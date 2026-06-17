@@ -33,6 +33,7 @@ import CarbonfactLogo from './assets/carbonfact.png';
 import BookIcon from './assets/book.svg';
 import BlogIcon from './assets/blog.svg';
 import WaddleIcon from './assets/waddle.svg';
+import CvIcon from './assets/cv.svg';
 
 const iconMap = {
     Work: WorkIcon,
@@ -70,6 +71,7 @@ const iconMap = {
     Book: BookIcon,
     Blog: BlogIcon,
     Waddle: WaddleIcon,
+    Cv: CvIcon,
 } as const;
 
 export type IconName = keyof typeof iconMap;

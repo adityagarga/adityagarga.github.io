@@ -27,6 +27,19 @@ const contactLinks = [
             window.open('https://github.com/adityagarga', '_blank', 'noopener,noreferrer');
         },
     },
+    {
+        icon: 'Cv' as const,
+        label: 'CV',
+        hoverColor: 'md:hover:bg-amber-200',
+        action: () => {
+            const link = document.createElement('a');
+            link.href = '/Aditya_Garga_CV.pdf';
+            link.download = 'Aditya_Garga_CV.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        },
+    },
 ];
 
 const ContactSection = () => {
