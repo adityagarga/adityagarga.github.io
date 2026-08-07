@@ -14,9 +14,9 @@ const ProjectSection = () => {
                             color="yellow"
                             primaryIcon="Waddle"
                             primaryTitle="Waddle"
-                            secondaryTitle="Agentic Shared Calendar App"
+                            secondaryTitle="Shared Calendar App"
                             description={[
-                                'AI-powered calendar assistant that uses multi-agent orchestration to manage scheduling through natural language. Agents handle intent parsing, conflict resolution, and calendar operations autonomously.',
+                                'A fun version of a shared calendar app for friends, partners and families.',
                             ]}
                             icons={[
                                 'Python',

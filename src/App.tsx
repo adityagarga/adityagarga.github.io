@@ -80,7 +80,7 @@ const HomePage = () => {
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     transition={{ delay: 0.2, type: 'spring', stiffness: 200, damping: 15 }}
-                    className="h-24 w-24 rounded-full border-2 border-black shadow-button-lg sm:h-28 sm:w-28"
+                    className="h-32 w-32 rounded-full border-2 border-black shadow-button-lg sm:h-40 sm:w-40"
                     src="/profile-icon.png"
                     alt="Aditya Garga"
                 />
