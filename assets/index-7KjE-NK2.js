@@ -72,7 +72,7 @@ title: 'Smartwatches in 2026'
 date: 2026-08-07
 description: 'The evolution of smartwatches'
 type: thoughts
-draft: false
+draft: true
 ---
 
 - casio watches 
@@ -83,6 +83,7 @@ draft: false
 - future -> fitness will stay, but there seems to be a rise in digital minimalism (eink devices, physical keyboards, and excitement around pebble)
 
 Trying to time travel with tech
+i think we still want usefull tech vs full analog (books vs ereader, pebbles vs plain watches) -> just unitrusive 
 
 Over and out. 
 adigindahouse`;function B6(e){const t=e.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);if(!t)return{data:{},content:e};const n={};for(const r of t[1].split(`
