@@ -6,7 +6,6 @@ import ContactIcon from './assets/contact.svg';
 import PartooIcon from './assets/partoo.svg';
 import CelsiusIcon from './assets/celsius.svg';
 import SchlumbergerIcon from './assets/schlumberger.svg';
-import SuperyuIcon from './assets/superyu.svg';
 import FastapiIcon from './assets/fastapi.svg';
 import FigmaIcon from './assets/figma.svg';
 import GithubIcon from './assets/github.svg';
@@ -44,7 +43,6 @@ const iconMap = {
     Partoo: PartooIcon,
     Celsius: CelsiusIcon,
     Schlumberger: SchlumbergerIcon,
-    Superyu: SuperyuIcon,
     Fastapi: FastapiIcon,
     Figma: FigmaIcon,
     Github: GithubIcon,

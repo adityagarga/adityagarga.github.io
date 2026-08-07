@@ -34,36 +34,13 @@ const ProjectSection = () => {
                     <StaggerItem>
                         <InfoCard
                             color="yellow"
-                            primaryEmoji="🎸"
-                            primaryTitle="guitar-view"
-                            secondaryTitle="Fretboard Visualizer"
+                            primaryEmoji="⌚"
+                            primaryTitle="garmin watchfaces"
+                            secondaryTitle="Connect IQ Store"
                             description={[
-                                'Guitar fretboard visualizer showing intervals relative to chord progressions, with a built-in metronome and voice leading.',
+                                'Watch faces and apps for Garmin devices, published on the Connect IQ store — 14 releases with 490+ downloads and a 4.8★ average rating.',
                             ]}
-                            icons={['Typescript', 'React', 'Tailwindcss']}
-                            link="https://adityagarga.com/guitar-view/"
-                        />
-                    </StaggerItem>
-                    <StaggerItem>
-                        <InfoCard
-                            color="yellow"
-                            primaryIcon="Superyu"
-                            primaryTitle="superyu"
-                            secondaryTitle="Fitness App"
-                            description={[
-                                'Full-stack fitness app that helps users plan and track their workouts. Built from the ground up with a focus on clean UX and reliable performance.',
-                            ]}
-                            icons={[
-                                'Supabase',
-                                'Python',
-                                'Fastapi',
-                                'Typescript',
-                                'React',
-                                'Reactquery',
-                                'Tailwindcss',
-                                'Figma',
-                            ]}
-                            link="https://github.com/adityagarga"
+                            link="https://apps.garmin.com/developer/a36325d1-0e06-4708-9fe6-c7c3c55f0034/apps"
                         />
                     </StaggerItem>
                 </StaggerContainer>
