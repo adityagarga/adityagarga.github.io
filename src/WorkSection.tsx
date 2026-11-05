@@ -12,16 +12,6 @@ const WorkSection = () => {
                     <StaggerItem>
                         <InfoCard
                             color="orange"
-                            primaryEmoji="👀"
-                            primaryTitle="Something new"
-                            secondaryTitle="Coming soon"
-                            subtitles={['Dec 2026 - ...']}
-                            description={['Next chapter loading. More on this very soon.']}
-                        />
-                    </StaggerItem>
-                    <StaggerItem>
-                        <InfoCard
-                            color="orange"
                             primaryIcon="Carbonfact"
                             primaryTitle="Carbonfact"
                             secondaryTitle="Forward Deployed AI Engineer"
