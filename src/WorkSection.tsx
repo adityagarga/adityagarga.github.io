@@ -15,7 +15,7 @@ const WorkSection = () => {
                             primaryEmoji="👀"
                             primaryTitle="Something new"
                             secondaryTitle="Coming soon"
-                            subtitles={['Nov 2026 - ...']}
+                            subtitles={['Dec 2026 - ...']}
                             description={['Next chapter loading. More on this very soon.']}
                         />
                     </StaggerItem>
