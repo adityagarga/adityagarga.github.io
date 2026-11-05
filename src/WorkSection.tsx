@@ -12,15 +12,27 @@ const WorkSection = () => {
                     <StaggerItem>
                         <InfoCard
                             color="orange"
+                            primaryEmoji="👀"
+                            primaryTitle="Something new"
+                            secondaryTitle="Coming soon"
+                            subtitles={['Nov 2026 - ...']}
+                            description={['Next chapter loading. More on this very soon.']}
+                        />
+                    </StaggerItem>
+                    <StaggerItem>
+                        <InfoCard
+                            color="orange"
                             primaryIcon="Carbonfact"
                             primaryTitle="Carbonfact"
                             secondaryTitle="Forward Deployed AI Engineer"
-                            subtitles={['June 2025 - Present']}
+                            subtitles={['June 2025 - Oct 2026']}
                             description={[
-                                'Y Combinator-backed, fast-growing climate tech startup building a carbon accounting platform for the fashion and textile industry, used by top brands',
-                                'Owned the full client lifecycle across 15+ fashion brands (pre-sales, onboarding, and long-term account management), turning their complex supply chain data into audit-ready carbon analytics',
-                                'Built various AI-powered data connectors for clients that power a custom LCA (life cycle assessment) engine, to generate powerful strategic sustainability insights',
+                                'Y Combinator-backed climate tech startup building a carbon accounting and product LCA platform for fashion and footwear brands',
+                                'Technical owner of customer data for 19 accounts (~45 brands supported, up to 15 at once); led 12 onboardings from kick-off to live platform, the fastest in 13 days',
+                                'Built integrations into customer PLM and ERP systems, Snowflake and SFTP feeds, and backed sales with demo accounts, POCs and data-readiness audits',
+                                'Built an MCP server and Claude skills workflow that let non-engineers answer over half of customer data requests on their own',
                             ]}
+                            icons={['Python']}
                             link="https://www.carbonfact.com"
                         />
                     </StaggerItem>
